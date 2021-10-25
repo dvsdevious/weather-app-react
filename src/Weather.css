@@ -1,0 +1,10 @@
+.Weather {
+    border: 1px solid #dadde1;
+}
+.Weather h1 {
+    color: #878787;
+    color: rgb(135, 135, 135);
+    display: block;
+    font-size: 24px;
+    font-weight: 100;
+}
