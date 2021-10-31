@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react"; 
+import React, { useState, useEffect } from "react"; 
 import axios from "axios"; 
 import WeatherForecastDay from "./WeatherForecastDay";
 
@@ -19,9 +19,9 @@ export default function WeatherForeacast(props) {
         let apiKey = "d0480346da20b22ca13a5aaa0631d64b";
         let longitude = props.coordinates.lon;
         let latitude = props.coordinates.lat;
-        let apiURL = `api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+        let apiUrl = `api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
     
-    axios.get(apiURL).then(handleResponse);
+    axios.get(apiUrl).then(handleResponse);
     }
 
     if (loaded) {
